@@ -10,7 +10,7 @@ JC = javac
 # line, just remove them (these are also just added for readability).
 CLASSES = \
         Main.java 
-        PwGen.java
+        PwGenerator.java
 
 default: classes
 
