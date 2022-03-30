@@ -1,0 +1,19 @@
+# Last Modified: Tue Mar 29 15:13:04 2022
+#include <tunables/global>
+
+/home/aishuvinod/p2 flags=(audit) {
+  #include <abstractions/base>
+  #include <abstractions/user-tmp>
+
+  /home/aishuvinod/p2 mr,
+  /sys/kernel/mm/transparent_hugepage/hpage_pmd_size r,
+  /home/aishuvinod/.project2/config w,
+  /var/log/syslog r,
+  /etc/timezone r,
+  /proc/uptime r,
+  /etc/hostid r,
+  /etc/passwd r,
+  /etc/hosts r,
+  /home/aishuvinod/template r,
+  network tcp,
+}
